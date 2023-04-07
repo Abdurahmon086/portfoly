@@ -1,0 +1,42 @@
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 33px;
+        margin-left: auto;
+    }
+
+    &__item {
+        list-style-type: none;
+    }
+    
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+    }
+    
+    &__menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .head {
+        &__list {
+            display: none;
+        }
+        
+        &__menu {
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
