@@ -50,17 +50,19 @@
     }
 }
 
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 660px) {
     .works {
 
         &__card {
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             padding: 0 0 17px 0;
+            max-width: 339px;
 
             &img {
-                width: 339px;
-                height: 230px;
+                max-width: 339px;
+                max-height: 230px;
             }
 
             .card {
@@ -68,9 +70,11 @@
                     font-size: 24px;
                     line-height: 30px;
                     margin-top: 17px;
+                    text-align: center;
                 }
 
                 &__inner {
+                    justify-content: center;
                     column-gap: 22px;
                 }
 
@@ -86,6 +90,33 @@
                 &__text {
                     margin-top: 25px;
                     max-width: 344px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    .works {
+
+        &__card {
+            align-items: flex-start;
+
+
+            .card {
+                &__title {
+                    text-align: left;
+                }
+
+                &__inner {
+                    justify-content: flex-start;
+                }
+
+                &__text {
+                    text-align: left;
                 }
             }
         }
